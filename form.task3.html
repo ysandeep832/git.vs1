@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <form>
+        <fieldset>
+            <legend align="right">General Admission Registration</legend>
+        <table>
+        <h2>General Admission Registration</h2>
+        <tr>
+        <label for="name">Name</label>
+        <input type="text"name="fname"id="name"placeholder="First Name"required>
+        <input type="text"name="sname"id="sname"placeholder="Last Name">
+        </tr><br><br>
+        <tr>
+            <label for="email">Email</label>
+            <input type="email"name="email"id="email"required>
+        </tr><br>
+        <tr>
+         <h4>Gender</h4><label for="male">Male</label>
+        <input type="radio"name="gender"id="male"value="Male"><br>
+        <label for="female">Female</label>
+        <input type="radio"name="gender"id="female"value="female">
+        </tr><br><br>
+        <tr>
+        <label for="num">Phone</label>
+        <input type="tel"name="num"id="num"partren="[0-9]{10}"required>
+        </tr>
+        <tr>
+            <label for="emergency">Emergency contact</label>
+            <input type="tel"name="emergency"id="emergency"partren="[0-9]{10}"required>
+        </tr><br>
+        <tr>
+        <h4>Do you require parking?</h4>
+        <label for="">Yes</label>
+        <input type="radio"name="parking"id="par"value="yes">
+        <label for="park">No</label>
+        <input type="radio"name="parking"id="park"value="no">
+        </tr><br><br>
+        <tr>
+            <h4>What is your room preference?</h4>
+            <label for="room1">Single Room</label>
+            <input type="checkbox"name="room"id="room1"value="single room"><br>
+            <label for=room2"">shared Room</label>
+            <input type="checkbox"name="room1"id="room2"value="shared room"><br>
+            <label for="room3">No Room Needed</label>
+            <input type="checkbox"name="room2"id="room3"value="no room needed">
+        </tr><br><br>
+        <tr>
+            <h4>Do you have dietary restrictions?</h4>
+            <label for="none">None</label>
+            <input type="checkbox"name="none"id="none"value="none">
+            <label for="vegetarian">Vegetarian</label>
+            <input type="checkbox"name="vegetarian"id="vegetarian"value="vegetarian">
+            <label for="glutten allergy">Glutten Allergy </label>
+            <input type="checkbox"name="glutten allergy"id="glutten allergy"value="glutten allergy">
+            <label for="nut allergy">Nut Allergy</label>
+            <input type="checkbox"name="nut allergy"id="nut allergy"value="nut allergy">
+        </tr><br><br>
+        <tr>
+            <label for="">Address</label>
+            <textarea name="address"col="4"rows="3"></textarea>
+        </tr><br><br>
+        <tr>
+            <label for="city">Choose your city</label>
+            <input list="cities"id="city"name="city">
+            <datalist id="cities">
+            <option value="MMP">
+            <option value="MPL">
+            <option value="PLR">
+            <option value="TPTY"><br>
+            </tr><br><br>
+            <tr>
+            <label for="file">Upload a document</label>
+            <input type="file"name="file"id="file"required>
+            </tr><br><br>
+            <tr>
+                <td>
+                <input type="Reset">
+                </td>
+                <td>
+                    <input type="Submit">
+                    </td>
+            </tr>
+        </table>
+      </form>
+      </fieldset>
+</body>
+</html>
